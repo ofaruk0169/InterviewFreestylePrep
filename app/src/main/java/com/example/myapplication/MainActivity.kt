@@ -24,3 +24,16 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+/**
+ * Interview Task: TodoList Application
+ * Time: 45 minutes
+ *
+ * Requirements:
+ * 1. Display list of todos
+ * 2. Add new todos
+ * 3. Mark todos complete/incomplete
+ * 4. Delete todos
+ *
+ * Bonus: Filter by status, edit todos
+ */
