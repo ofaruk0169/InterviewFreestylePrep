@@ -1,3 +1,8 @@
 package com.example.myapplication.data
 
-data class ToDo()
+data class ToDo(
+    val id: Int,
+    val text: String,
+    val completed: Boolean
+
+)
