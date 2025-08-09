@@ -52,16 +52,31 @@ fun ToDoListScreen() {
         )
         Button(
             onClick = {
-
+                val newTodo = ToDo(
+                    id = todos.size + 1,
+                    text = inputText,
+                    completed = false
+                )
+                todos = todos + newTodo
+                inputText = ""
             }
         ) {
             Text("Add todo")
         }
 
+        Button(
+            onClick = {
+                val newTodo = ToDo(
+                    id = todos.size + 1,
+                    text = inputText,
+                    completed = false
+                )
+                todos = todos + newTodo
+            }
+
+        ) {
+            Text("Delete todo")
+        }
+
     }
-
-
-
-
-
 }
