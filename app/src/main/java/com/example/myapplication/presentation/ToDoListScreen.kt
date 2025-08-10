@@ -39,6 +39,11 @@ fun ToDoListScreen() {
                         }
                     } )
                     Text(text = todo.text)
+                    Button(
+                        onClick =  {
+                            todos = todos.filter { it.id != todo.id }
+                        }
+                    ) {  Text("Delete todo") }
                 }
             }
 
